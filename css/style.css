@@ -83,7 +83,7 @@ main > .container-6 {
 	margin-bottom: 80px;
 	border-radius: 10px;
 	position: relative;
-	box-shadow: 0 15px 20px black;
+	box-shadow: 0 20px 30px black;
 }
 
 .content-label {
@@ -168,13 +168,244 @@ main > .container-6 {
 	color: white;
 }
 
+/* style for the vineyard page */
 .img-vineyard {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 10px;
-	box-shadow: 0 15px 20px black;
+	box-shadow: 0 20px 20px black;
 }
+
+.img-vineyard + h4 {
+	text-align: center;
+}
+
+.img-vineyard + h4 > a{
+	color: gray;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+.img-vineyard + h4 > a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.vineyard-banner > .vineyard-banner-label {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-top-left-radius: 20px;
+	width: 50%;
+	height: 100%;
+	padding: 50px;
+	color: white;
+}
+
+.vineyard-banner{
+	background-attachment: fixed;
+}
+
+.vineyard-banner + h3 {
+	padding: 20px;
+	color: gray;
+	text-align: center;
+	font-weight: 100px;
+}
+
+.vineyard-banner + h3 > span {
+	color: white;
+}
+
+.vineyard-banner-label > h4 {
+	text-align: center;
+	margin: 50px;
+}
+
+.vineyard-banner-label > p {
+	color: lightgray;
+	text-align: justify;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.square-container {
+	width: 75%;
+   	height: 0;
+   	border-radius: 20px;
+   	margin-bottom: 40px;
+	margin: 0 auto 40px auto;
+}
+
+.img-square {
+	width: 33.33%;
+	height: 0;
+	padding-bottom: 25%;
+	float: left;
+	opacity: 0.3;
+}
+
+.img-square:hover {
+	opacity: 1;
+	box-shadow: 0 20px 10px black;
+}
+
+.img-square-1 {
+	background-image: url(../img/vineyard/vineyard-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-2 {
+	background-image: url(../img/vineyard/vineyard-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-3 {
+	background-image: url(../img/vineyard/vineyard-3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-4 {
+	background-image: url(../img/vineyard/vineyard-4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-5 {
+	background-image: url(../img/vineyard/vineyard-5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-6 {
+	background-image: url(../img/vineyard/vineyard-6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-7 {
+	background-image: url(../img/vineyard/vineyard-7.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-8 {
+	background-image: url(../img/vineyard/vineyard-8.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-9 {
+	background-image: url(../img/vineyard/vineyard-9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-10 {
+	background-image: url(../img/vineyard/vineyard-10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-11 {
+	background-image: url(../img/vineyard/vineyard-11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.img-square-12 {
+	background-image: url(../img/vineyard/vineyard-12.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.vineyard-invite {
+	background-image: url(../img/vineyard/vineyard-13.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+	box-shadow: 0 20px 10px black;
+	margin-bottom: 40px;
+}
+
+.vineyard-invite > div {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	border-radius: 20px;
+}
+
+.invite-content {
+	margin: 0 auto;
+}
+
+.invite-content > h4 {
+	text-align: center
+	margin: 30px;
+	color: white;
+}
+
+.invite-content > p {
+	text-align: justify;
+	width: 40%;
+}
+
+.invite-content > p > a {
+	color: white;
+}
+
+/* Style for Winery Page*/
+
+.winery-banner {
+	background-attachment: fixed;
+}
+
+div.container-5 > div {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 50%;
+	padding: 5%;
+	border-top-left-radius: 20px;
+}
+
+div.container-5 > div > h4 {
+	color: white;
+}
+
+div.winery-info-right > div {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 50%;
+	padding: 5%;
+	border-top-right-radius: 20px;
+	float: right;
+}
+
+.winery-info-1 {
+	background-image: url(../img/wine-cellar.jpg);
+}
+
+
+
+
 
 @media only screen and (max-width: 765px) {
 	#navBar > a > img {
@@ -244,6 +475,10 @@ main > .container-6 {
 	.footer-social {
 		letter-spacing: 0;
 	}
+
+	.vineyard-banner > .vineyard-banner-label {
+		width: 100%;
+	}
 }
 
 
@@ -289,7 +524,7 @@ main > .container-6 {
 
 	.navbar-fixed-left .navbar-nav {
 		position: absolute;
-		top: 50%;
+		top: 55%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
