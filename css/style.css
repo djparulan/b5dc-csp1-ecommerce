@@ -1,71 +1,16 @@
 * {
 	font-family: 'Raleway', sans-serif;
+	color: gray;
 }
 
 body {
 	background-color: #272727;
-}
-
-#navBar {
-	background-color: transparent;
-	z-index: 1000;
-}
-
-.navbar-fixed-left {
-	/*width: 140px;*/
-	position: fixed;
-	border-radius: 0;
 	height: 100%;
-}
-
-.navbar-fixed-left .navbar-nav > li {
-	float: none;
-	width: 139px;
-}
-
-.navbar-fixed-left + .container {
-	padding-left: 160px;
-}
-
-.navbar-fixed-left .navbar-nav > li .dropdown-menu {
-	margin-top: -50px;
-	margin-left: 140px;
-	background-color: gray;
-}
-
-.navbar > a > img {
-	margin-top: 30px;
-	box-shadow: 0 10px 20px black;
-	padding: 0;
-}
-
-ul.nav-bar {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-
-ul.nav-bar > li > a {
-	text-align: center;
-	font-size: 17px;
-	border: 1px solid transparent;
-	color: gray;
-	text-shadow: 0 5px 5px black;	
-}
-
-ul.nav-bar > li > a:hover {
-	background-color: transparent;
-	border: 1px solid white;
-}
-
-button.navbar-toggle {
-
 }
 
 main {
 	height: 100%;
+	margin-bottom: 40px;
 }
 
 .parallax-container {
@@ -124,12 +69,16 @@ main > .container-6 {
 	background-image: url(../img/wine-tasting.jpg);
 }
 
+.container-8 {
+	background-image: url(../img/vines.jpg);
+}
+
 .content-container {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 1000px;
+	height: 900px;
 	margin-top: 20px;
 	margin-bottom: 80px;
 	border-radius: 10px;
@@ -183,38 +132,73 @@ main > .container-6 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-transform: lowercase;
+}
 
+.footer-social {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding-top: 10px;
+}
+
+.footer-social > p {
+	text-align: center;
+}
+
+.footer-social a {
+	color: lightgray;
+	letter-spacing: 30px;
+}
+
+.footer-social a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-reminder > p {
+	text-align: right;
+}
+
+.footer-reminder a {
+	color: gray;
+}
+
+.footer-reminder a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.img-vineyard {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-shadow: 0 15px 20px black;
 }
 
 @media only screen and (max-width: 765px) {
+	#navBar > a > img {
+		width: 90px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	a.fa {
+		color: gray;
+		font-size: 17px;
+		margin: 20px;
+		display: inline;
+	}
+
+	a.fa:hover {
+		color: white;
+		text-decoration: none;
+	}
+
 	main {
-		margin: 0;
+		margin: 40px 0 0 0;
 		padding: 0;
-	}
-
-	.navbar {
-		height: 75px;
-	}
-
-	.navbar-header {
-		margin-top: 10px;
-	}
-
-	.navbar > a > img {
-	margin: 0 auto;
-	width: 85px;
-	box-shadow: 0 5px 5px black;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	}
-
-	ul.nav-bar {
-		margin-top: 75px;
-	}
-
-	ul.nav-bar > li {
-
 	}
 
 	.navbar-fixed-left .navbar-nav > li .dropdown-menu {
@@ -222,50 +206,128 @@ main > .container-6 {
 		margin-left: 0;
 	}
 
+	.parallax-container {
+		height: 500px;
+	}
+
 	.parallax-container > .caption {
 		font-size: 13px;
 		letter-spacing: 10px
 	}
 
-	.content-label {
-		height: 50%;
+	.content-container {
+		height: 500px;
 	}
 
-	.content-label > h4 {
-		margin-top: 50px;
+	.content-label {
+		height: 50%;
+		padding: 20px;
+	}
+
+	div.content-label > h4 {
+		margin-top: 5px;
+	}
+
+	div.content-label > p {
+		height: 100px;
 	}
 
 	.content-more-info {
 		height: 50%;
 	}
 
+	.footer-address,.footer-reminder p {
+		text-align: center;
+		margin: 20px auto;
+	}
 
+	.footer-social {
+		letter-spacing: 0;
+	}
 }
 
 
-
+/* font-size for parallax captions on specific width */
 @media only screen and (min-width: 766px) and (max-width: 969px) {
 	.parallax-container > .caption {
 		font-size: 15px;
 		letter-spacing: 10px
 	}
 
-	ul.nav-bar > li {
-		margin: 50px 0;
-	}
-
 }
 
-@media only screen and (max-width: 995px) {
+/* Responsive web design for a specific width (eg. iPad)*/
+@media only screen and (min-width: 500px) and (max-width: 995px) {
 	.content-label {
-		height: 50%;
+		width: 50%;
+		height: 100%;
+		padding-top: 100px;
 	}
 
 	.content-label > h4 {
-		margin-top: 50px;
+		margin-top: 200px;
 	}
 
 	.content-more-info {
-		height: 50%;
+		width: 50%;
+		height: 100%;
+	}
+
+	.footer-address,.footer-reminder p {
+		text-align: center;
+		margin: 20px auto;
 	}	
+}
+
+@media only screen and (min-width: 767px) {
+	#navBar {
+		height: 100%;
+		margin: 0;
+		background-image: none;
+		background-color: transparent;
+	}
+
+	.navbar-fixed-left .navbar-nav {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.navbar-nav > li {
+		float: none;
+		width: 139px;
+		margin: 40px 0;
+	}
+
+	.navbar-nav > li > a {
+		text-align: center;
+	}
+
+	.navbar-nav 
+	> li 
+	> a 
+	> p {
+		font-size: 16px;
+		text-shadow: 0 10px 5px black;
+	}
+
+	.navbar-nav 
+	> li 
+	> a 
+	> p:hover {
+		color: white;
+	}
+
+	#navBar > a > img {
+		margin: 20px auto;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		padding: 0;
+		box-shadow: 0 10px 10px black;
+	}
+
+	
+
 }
