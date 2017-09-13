@@ -4,21 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-	<title>Schloss Borussen</title>
+	<title>Schloss Borussen | The Winery</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.ico">
 
 </head>
 <body>
 
 	<nav id="navBar" class="navbar navbar-inverse navbar-fixed-top navbar-fixed-left col-lg-2 col-md-2 col-sm-3 col-xs-12">
+
   		<a href="index.html" >
-  			<img src="img/sb-logo-6.png" class="col-lg-8 col-md-10 col-sm-10">
+  			<img src="img/sb-logo-6.png" class="col-lg-8 col-md-10 col-sm-10" alt="Site Logo">
 		</a>
+
 	    <div class="container-fluid">
 	    	<div class="navbar-header">
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -30,13 +33,20 @@
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		        <ul class="nav navbar-nav">
 			        <li><a href="wines.html"><p>Our Wines</p></a></li>
-			        <li><a href="winery.html"><p>The Winery</p></a></li> 
+			        <li><a href="winery.html"><p class="active-page">The Winery</p></a></li> 
 			        <li><a href="vineyard.html"><p>The Vineyard</p></a></li> 
-			        <li><a href="about-us.html"><p>About Us</p></a></li>
-			        <li><a href="event.html"><p>Event</p></a></li>
+			        <li class="dropdown">
+			            <a class="dropdown-toggle" data-toggle="dropdown" href="about-us.html"><p>About Us <span class="caret"></span></p></a>
+			            <ul class="dropdown-menu">
+			            	<li><a href="about-us.html">About Schloss Borussen</a></li>
+			            	<li><a href="history.html">Our History</a></li>
+			            	<li><a href="winemakers.html">The Winemakers</a></li>
+			            </ul>
+			        </li>
+			        <li><a href="visit.html"><p>Visit</p></a></li>
 		        </ul>
-		    </div>
-	    </div>
+		    </div> <!-- /#myNavbar -->
+	    </div> <!-- /.contianer-fluid -->
 	</nav>		
 
 
@@ -77,7 +87,7 @@
 
 		<div class="content-container parallax winery-info-2">
 			<div class="content-label content-label-left">
-				<h4 class="content-title">Stored inside to oak barrels of the highest quality</h4>
+				<h4 class="content-title">Stored inside Oak Barrels of the Highest Quality</h4>
 				<p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -98,7 +108,7 @@
 
 		<div class="content-container parallax winery-info-3">
 			<div class="content-label content-label-right">
-				<h4 class="content-title">Equipped with the Latest Technology</h4>
+				<h4 class="content-title">Monitored 24/7</h4>
 				<p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -119,7 +129,7 @@
 
 		<div class="content-container parallax winery-info-4">
 			<div class="content-label content-label-left">
-				<h4 class="content-title">Equipped with the Latest Technology</h4>
+				<h4 class="content-title">Employs the Best People for the Job</h4>
 				<p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -140,7 +150,7 @@
 
 		<div class="content-container parallax winery-info-5">
 			<div class="content-label content-label-right">
-				<h4 class="content-title">Equipped with the Latest Technology</h4>
+				<h4 class="content-title">Every Bottle Made is Cared For</h4>
 				<p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -161,7 +171,7 @@
 
 		<div class="content-container parallax winery-info-6">
 			<div class="content-label content-label-left">
-				<h4 class="content-title">Equipped with the Latest Technology</h4>
+				<h4 class="content-title">Stored in a Temperate Controlled Room</h4>
 				<p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -179,7 +189,16 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
-		
+
+		<div class="content-container parallax vineyard-invite">
+			<a href="Visit.html">
+				<div class="invite-content">
+					<h4>Visit Us!</h4>
+					<p>See these beautiful sceneries yourselves.</p>
+					<p>For more information, click this image to our <span class="text-white">Visit Page</span></p>
+				</div>
+			</a>
+		</div>
 			
 		<hr>
 

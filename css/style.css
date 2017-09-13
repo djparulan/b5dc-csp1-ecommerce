@@ -8,6 +8,7 @@ body {
 	height: 100%;
 }
 
+/* Standard Style for contents */
 span.paragraph-break {
 	display: block;
 	margin: 20px;
@@ -21,9 +22,8 @@ hr {
 	clear: both;
 }
 
-main {
-	height: 100%;
-	margin-bottom: 40px;
+p.active-page {
+	color: white;
 }
 
 .content-container {
@@ -31,7 +31,7 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 900px;
+	height: 800px;
 	margin-top: 20px;
 	margin-bottom: 80px;
 	border-radius: 10px;
@@ -41,6 +41,60 @@ main {
 
 .parallax {
 	background-attachment: fixed;
+}
+
+.content-label {
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 50%;
+	padding: 5%;
+}
+
+.content-label-left {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.content-label-right {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	float: right;
+}
+
+.banner-title {
+	text-align: right;
+	color: white;
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+
+.content-title {
+	text-align: center;
+	color: white;
+	margin: 40px 0;
+	line-height: 30px;
+}
+
+.content-paragraph {
+	text-align: justify;
+	color: lightgray;
+	padding: 5px;
+	overflow: auto;
+}
+
+.img {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-shadow: 0 20px 20px black;
+}
+
+/* Style for Main Page */
+
+main {
+	height: 100%;
+	margin-bottom: 40px;
 }
 
 .main-banner > .caption {
@@ -61,11 +115,11 @@ main {
 }
 
 .main-banner-2 {
-	background-image: url(../img/wine-glass-2.jpg);
+	background-image: url(../img/wine-glass.jpeg);
 }
 
 .main-banner-3 {
-	background-image: url(../img/wine-glass.jpeg);
+	background-image: url(../img/wine-glass-2.jpg);
 }
 
 .container-4 {
@@ -96,7 +150,7 @@ main > .container-6 {
 	height: 100%;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	padding: 100px 30px;
+	padding:0 30px;
 }
 
 .preview-content-label > h4 {
@@ -174,54 +228,7 @@ main > .container-6 {
 }
 
 
-/* General Rule for contents*/
-.content-label {
-	background-color: rgba(0, 0, 0, 0.7);
-	height: 100%;
-	width: 50%;
-	padding: 5%;
-}
 
-.content-label-left {
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	direction: rtl;
-}
-
-.content-label-right {
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	direction: ltr;
-	float: right;
-}
-
-
-.content-title {
-	text-align: center;
-	color: white;
-	margin: 40px 0;
-}
-
-.banner-title {
-	text-align: right;
-	color: white;
-	margin-bottom: 30px;
-}
-
-.content-paragraph {
-	text-align: justify;
-	color: lightgray;
-	padding: 5px;
-	overflow: auto;
-}
-
-.img {
-	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	border-radius: 10px;
-	box-shadow: 0 20px 20px black;
-}
 
 /*Style for Wine Page*/
 .wine-content {
@@ -280,13 +287,17 @@ main > .container-6 {
 	text-align: center;
 }
 
-.img-vineyard + h4 > a{
+.img-vineyard 
++ h4 
+> a{
 	color: gray;
 	border: 1px solid white;
 	padding: 10px;
 }
 
-.img-vineyard + h4 > a:hover {
+.img-vineyard 
++ h4 
+> a:hover {
 	text-decoration: none;
 	color: white;
 }
@@ -295,7 +306,9 @@ main > .container-6 {
 	text-align: center;
 }
 
-.vineyard-banner + h4 > span {
+.vineyard-banner 
++ h4 
+> span {
 	color: white;
 	text-shadow: 0 5px 5px black;
 }
@@ -307,7 +320,7 @@ main > .container-6 {
 
 
 .square-container {
-	width: 75%;
+	width: 60%;
    	height: 0;
    	border-radius: 20px;
    	margin-bottom: 40px;
@@ -328,84 +341,84 @@ main > .container-6 {
 }
 
 .img-square-1 {
-	background-image: url(../img/vineyard/vineyard-1.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-2 {
-	background-image: url(../img/vineyard/vineyard-2.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-3 {
-	background-image: url(../img/vineyard/vineyard-3.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-3.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-4 {
-	background-image: url(../img/vineyard/vineyard-4.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-4.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-5 {
-	background-image: url(../img/vineyard/vineyard-5.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-5.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-6 {
-	background-image: url(../img/vineyard/vineyard-6.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-6.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-7 {
-	background-image: url(../img/vineyard/vineyard-7.jpeg);
+	background-image: url(../img/album-img-vineyard/vineyard-7.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-8 {
-	background-image: url(../img/vineyard/vineyard-8.jpeg);
+	background-image: url(../img/album-img-vineyard/vineyard-8.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-9 {
-	background-image: url(../img/vineyard/vineyard-9.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-9.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-10 {
-	background-image: url(../img/vineyard/vineyard-10.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-10.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-11 {
-	background-image: url(../img/vineyard/vineyard-11.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-11.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
 
 .img-square-12 {
-	background-image: url(../img/vineyard/vineyard-12.jpg);
+	background-image: url(../img/album-img-vineyard/vineyard-12.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
@@ -414,12 +427,14 @@ main > .container-6 {
 .vineyard-invite {
 	background-image: url(../img/vineyard/vineyard-13.jpg);
 	height: 500px;
+	margin-top: 40px;
 }
 
 .vineyard-invite a:hover {
 	text-decoration: none;
 }
 
+/* Style for Invite Element*/
 .invite-content {
 	background-color: rgba(0, 0, 0, 0.8);
 	width: 100%;
@@ -442,7 +457,9 @@ main > .container-6 {
 	width: 40%;
 }
 
-.invite-content > p > a {
+.invite-content 
+> p 
+> a {
 	color: white;
 }
 
@@ -474,7 +491,7 @@ main > .container-6 {
 .about-option-container {
 	width: 80%;
 	margin: 40px auto;
-	height: 700px;
+	height: 500px;
 
 }
 
@@ -592,21 +609,71 @@ main > .container-6 {
 	background-image: url(../img/winemaker-3.jpg);
 }
 
+.history-invite {
+	background-image: url(../img/history/history-8.jpg);
+	height: 500px;
+}
+
+.history-invite > a:hover {
+	text-decoration: none;
+}
+
+/* Style for Visit page */
+main > div.visit {
+	height: 500px;
+}
+
+.visit-banner {
+	background-image: url(../img/vineyard/vineyard-10.jpg);
+	background-position: 50% 100%;
+
+}
+
+.visit-1 {
+	background-image: url(../img/vineyard/vineyard-1.jpg);
+	background-position: 50% 100%;
+}
+
+.visit-1 a:hover {
+	text-decoration: none;
+}
+
+.visit-2 {
+	background-image: url(../img/wine-bottle.jpg);
+}
+
+.visit-3 {
+	background-image: url(../img/wine-glass-3.jpg);
+}
 
 
+/* Responsive design for a specific width (e.g. Iphones) */
 @media only screen and (max-width: 450px) {
+	.wine-content > img {
+		margin-bottom: 20px;
+	}
+
+	.wine-content > div.wine-label {
+		position: static;
+		width: 100%;
+	}
+
 	div.wine-label > .content-title {
 		margin: 10px;
+		text-shadow: 0 10px 10px black;
 	}
 
 	div.wine-label > .content-paragraph {
-		height: 100px;
+		height: 150px;
+		text-shadow: 0 10px 10px black;
 	}
 }
 
 
 @media only screen and (max-width: 765px) {
-	#navBar > a > img {
+	#navBar 
+	> a 
+	> img {
 		width: 90px;
 		position: absolute;
 		left: 50%;
@@ -630,7 +697,9 @@ main > .container-6 {
 		padding: 0;
 	}
 
-	.navbar-fixed-left .navbar-nav > li .dropdown-menu {
+	.navbar-fixed-left 
+	.navbar-nav 
+	> li .dropdown-menu {
 		margin-top: 0;
 		margin-left: 0;
 	}
@@ -670,8 +739,8 @@ main > .container-6 {
 		letter-spacing: 0;
 	}
 
-	.vineyard-banner > .vineyard-banner-label {
-		width: 100%;
+	.square-container {
+		width: 80%;
 	}
 
 	.banner-title {
@@ -685,10 +754,6 @@ main > .container-6 {
 
 	.content-paragraph {
 		height: 300px;
-	}
-
-	.content-label-left {
-		direction: ltr;
 	}
 
 	div.wine-label {
@@ -724,7 +789,7 @@ main > .container-6 {
 
 }
 
-/* Responsive web design for a specific width (eg. iPad)*/
+/* Responsive design for a specific width (eg. iPad)*/
 @media only screen and (min-width: 500px) and (max-width: 995px) {
 	.preview-content-label {
 		width: 50%;
@@ -763,12 +828,17 @@ main > .container-6 {
 	}
 
 	.navbar-nav > li {
+		background-color: #202020;
 		float: none;
 		width: 139px;
 		margin: 40px 0;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px black;
 	}
 
-	.navbar-nav > li > a {
+	.navbar-nav 
+	> li 
+	> a {
 		text-align: center;
 	}
 
@@ -778,6 +848,7 @@ main > .container-6 {
 	> p {
 		font-size: 16px;
 		text-shadow: 0 10px 5px black;
+		margin: 0;
 	}
 
 	.navbar-nav 
@@ -787,7 +858,9 @@ main > .container-6 {
 		color: white;
 	}
 
-	#navBar > a > img {
+	#navBar 
+	> a 
+	> img {
 		margin: 20px auto;
 		position: absolute;
 		left: 50%;
@@ -796,6 +869,27 @@ main > .container-6 {
 		box-shadow: 0 10px 10px black;
 	}
 
-	
+	li.dropdown:hover ul.dropdown-menu {
+		display: block;
+	}
+
+	a.dropdown-toggle {
+		position: relative;
+	}
+
+	ul.dropdown-menu {
+		background-color: #272727;
+		position: absolute;
+		top: 0;
+		left: 130px;
+		box-shadow: 0 10px 10px black;
+		border-radius: 5px;
+	}
+
+	ul.dropdown-menu 
+	> li 
+	> a {
+		color: lightgray;
+	}
 
 }

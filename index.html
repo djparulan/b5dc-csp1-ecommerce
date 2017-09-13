@@ -11,14 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.ico">
 
 </head>
 <body>
 
 	<nav id="navBar" class="navbar navbar-inverse navbar-fixed-top navbar-fixed-left col-lg-2 col-md-2 col-sm-3 col-xs-12">
+
   		<a href="index.html" >
-  			<img src="img/sb-logo-6.png" class="col-lg-8 col-md-10 col-sm-10">
+  			<img src="img/sb-logo-6.png" class="col-lg-8 col-md-10 col-sm-10" alt="Site Logo">
 		</a>
+
 	    <div class="container-fluid">
 	    	<div class="navbar-header">
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,15 +35,23 @@
 			        <li><a href="wines.html"><p>Our Wines</p></a></li>
 			        <li><a href="winery.html"><p>The Winery</p></a></li> 
 			        <li><a href="vineyard.html"><p>The Vineyard</p></a></li> 
-			        <li><a href="about-us.html"><p>About Us</p></a></li>
-			        <li><a href="event.html"><p>Event</p></a></li>
+			        <li class="dropdown">
+			            <a class="dropdown-toggle" data-toggle="dropdown" href="about-us.html"><p>About Us <span class="caret"></span></p></a>
+			            <ul class="dropdown-menu">
+			            	<li><a href="about-us.html">About Schloss Borussen</a></li>
+			            	<li><a href="history.html">Our History</a></li>
+			            	<li><a href="winemakers.html">The Winemakers</a></li>
+			            </ul>
+			        </li>
+			        <li><a href="visit.html"><p>Visit</p></a></li>
 		        </ul>
-		    </div>
-	    </div>
+		    </div> <!-- /#myNavbar -->
+	    </div> <!-- /.container-fluid -->
 	</nav>		
 
 
-	<main class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-3">
+	<main class="col-md-9 col-sm-9 col-xs-12 col-md-offset-2 col-sm-offset-3">
+	
 		<div class="content-container parallax main-banner main-banner-1">
 			<div class="caption">CRAFTSMANSHIP</div>
 		</div>
@@ -65,12 +76,12 @@
 
 			</div> <!-- /.content-label -->
 
-			<a href="#">
+			<a href="wines.html">
 				<div class="content-more-info col-md-8 col-sm-12 col-xs-12">
 					<p>Click</p>
 				</div>
 			</a>
-		</div> <!-- content-container -->
+		</div> <!-- /.content-container -->
 
 		<div class="content-container container-5">
 			<div class="preview-content-label col-md-4 col-sm-12 col-xs-12">
@@ -89,7 +100,7 @@
 					<p>Click</p>
 				</div>
 			</a>
-		</div> <!-- content-container -->
+		</div> <!-- /.content-container -->
 
 		<div class="content-container container-6">
 			<div class="preview-content-label col-md-4 col-sm-12 col-xs-12">
@@ -108,7 +119,7 @@
 					<p>Click</p>
 				</div>
 			</a>
-		</div> <!-- content-container -->
+		</div> <!-- /.content-container -->
 
 		<div class="content-container container-7">
 			<div class="preview-content-label col-md-4 col-sm-12 col-xs-12">
@@ -122,12 +133,12 @@
 
 			</div> <!-- /.content-label -->
 
-			<a href="#">
+			<a href="visit.html">
 				<div class="content-more-info col-md-8 col-sm-12 col-xs-12">
 					<p>Click</p>
 				</div>
 			</a>
-		</div> <!-- content-container -->
+		</div> <!-- /.content-container -->
 
 		<div class="content-container container-8">
 			<div class="preview-content-label col-md-4 col-sm-12 col-xs-12">
@@ -141,12 +152,12 @@
 
 			</div> <!-- /.content-label -->
 
-			<a href="#">
+			<a href="about-us.html">
 				<div class="content-more-info col-md-8 col-sm-12 col-xs-12">
 					<p>Click</p>
 				</div>
 			</a>
-		</div> <!-- content-container -->
+		</div> <!-- /.content-container -->
 
 		<hr>
 
